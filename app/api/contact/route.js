@@ -10,7 +10,6 @@ export async function POST(req) {
     try {
         await connectDB();
         await Contact.create({ name, email, message });
-        //console.log('handlesubmit :POST accessed in components/contactform.js');
 
         return NextResponse.json({
             msg: ["Message sent successfully"],

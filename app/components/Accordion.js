@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import styles from './Accordion.module.css';
 
 const AccordionItem = ({ title, content }) => {
-  console.log('accordion item accessed in components/accordion.js');
+  
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -25,7 +25,7 @@ const AccordionItem = ({ title, content }) => {
 };
 
 const Accordion = ({ items }) => {
-  console.log('accordion accessed in components/accordion.js');
+
   return (
     <div className={styles.accordion}>
       {items.map((item, index) => (

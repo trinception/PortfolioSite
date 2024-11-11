@@ -6,18 +6,17 @@ const ASSISTANT_ID = process.env.OPENAI_ASSISTANT_ID;
 
 // Create a new thread
 export async function POST() {
-    console.log("inside api/portfolioBot/thread/route.js");
 
-    console.log('OpenAI Configuration:', {
+    /*console.log('OpenAI Configuration:', {
     hasApiKey: !!process.env.OPENAI_API_KEY,
     hasAssistantId: !!process.env.OPENAI_ASSISTANT_ID,
     betaExists: !!openai.beta,
     threadsExists: !!openai.beta?.threads,
     assistantsExists: !!openai.beta?.assistants
-    } );
+  } );*/
 
   try {
-   // Verify the assistant exists first (optional but recommended)
+   // Retrieve assistant
     try {
        await openai.beta.assistants.retrieve(ASSISTANT_ID);
        } catch (error) {

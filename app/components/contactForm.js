@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from './contactForm.module.css';
 
 export default function ContactForm() {
-  console.log('contactform accessed in components/contactform.js');
+  
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -15,15 +15,11 @@ export default function ContactForm() {
 
         e.preventDefault();
 
-        console.log("Name: ", name);
-        console.log("Email: ", email);
-        console.log("Message: ", message);
         let body= JSON.stringify({
             name,
             email,
             message,
         });
-        console.log("Body: ", body);
 
         const res = await fetch("api/contact", {
             method: "POST",

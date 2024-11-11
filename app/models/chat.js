@@ -13,6 +13,6 @@ const bodySchema = new Schema({
   const Chat =
       mongoose.models.Chat || mongoose.model("Chat",
           bodySchema);
-console.log('Model Chat.js accessed.');
+      console.log('Model Chat.js accessed.');
 
   export default Chat;

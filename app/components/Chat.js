@@ -28,10 +28,32 @@ const PortfolioBotMsg = ({text}) => {
   );
 }
 
+const LoadingMsg = () =>{
+  return(
+    <div className={styles.LoadingMsg}>
+      <div className={styles.loadingFlag}>
+        <div className={styles.flagContainer}>
+          <div className={styles.loadingIcon}>
+            <div className={styles.dot1}></div>
+            <div className={styles.dot2}></div>
+            <div className={styles.dot3}></div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.loadingBody}>
+        <div className={styles.messageContainer}>
+          <div className={styles.messageBubble}>
+            <p>PortfolioBot is responding&hellip;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 
 const Message = ({ role, text }) => {
-  //console.log('input role for message in component Chat.js:');
-  //console.log(role);
+
   switch(role){
     case "user":
       return <UserMsg text={text} />;
@@ -54,6 +76,8 @@ const Chat = ({
 
   //Disabled further input while processing prompts
   const [inputDisabled, setInputDisabled] = useState(false);
+  //set as loading while processing prompts
+  const [loading, setAsLoading] = useState(false);
 
 
   // automatically scroll to bottom of chat
@@ -119,7 +143,6 @@ const Chat = ({
 
   const submitPrompt = (e) =>{
     e.preventDefault();
-    console.log(messageInput);
     if (!messageInput.trim()) return;
     sendMessage(messageInput);
     setMessages((prevMessages) => [
@@ -128,6 +151,8 @@ const Chat = ({
     ]);
     setMessageInput("");
     setInputDisabled(true);
+    setAsLoading(true);
+    console.log("loading...");
     scrollToBottom();
   };
 
@@ -158,12 +183,16 @@ const Chat = ({
       })
     );
     setInputDisabled(true);
+    setAsLoading(true);
+    console.log("loading...");
     submitActionResult(runId, toolCallOutputs);
   };
 
   // handleRunCompleted - re-enable the input form
   const handleRunCompleted = () => {
     setInputDisabled(false);
+    setAsLoading(false);
+    console.log("Done!");
   };
 
   const handleReadableStream = (stream) => {
@@ -223,9 +252,28 @@ const Chat = ({
           {messages.map((message, index) => (
             <Message key={index} role={message.role} text={message.text} />
           ))}
+            {loading&& (<div className={styles.LoadingMsg}>
+              <div className={styles.loadingFlag}>
+                <div className={styles.flagContainer}>
+                  <div className={styles.loadingIcon}>
+                    <div className={styles.dot1}></div>
+                    <div className={styles.dot2}></div>
+                    <div className={styles.dot3}></div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.loadingBody}>
+                <div className={styles.messageContainer}>
+                  <div className={styles.message}>
+                    <p>PortfolioBot is responding&hellip;</p>
+                  </div>
+                </div>
+              </div>
+            </div>)}
         </ul>
-      <div ref={messagesEndRef}/>
+        <div ref={messagesEndRef}/>
       </div>
+
       <form onSubmit={submitPrompt} className={styles.typeArea}>
         <input
           type="text"

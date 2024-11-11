@@ -59,6 +59,92 @@
 
 }
 
+.flagContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 1.125rem;
+}
+
+.LoadingMsg{
+  align-items: center;
+  display: flex;
+  position: ;
+  bottom: 0rem;
+  left:0px;
+}
+
+.loadingBody{
+  margin: auto;
+  display: initial;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  width: auto;
+}
+
+.loadingFlag{
+  display: inherit;
+    align-items: inherit;
+    flex: 0 0 auto;
+
+    margin-right: 0.5rem;
+}
+
+.loadingIcon{
+  position: relative;
+  width: 0.25rem;
+  height: 1.25rem;
+}
+
+
+
+
+.dot1{
+  position: absolute;
+    top: 0.5rem;
+
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: rgb(16, 137, 211);
+    border-radius: 0.125rem;
+
+    transition-timing-function: ease-in-out;
+    animation: bounce--top 1.125s infinite;
+}
+
+.dot2{
+  position: absolute;
+    top: 0.5rem;
+
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: rgb(16, 137, 211);
+    border-radius: 0.125rem;
+
+    transition-timing-function: ease-in-out;
+}
+
+.dot3{
+  position: absolute;
+    top: 0.5rem;
+
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: rgb(16, 137, 211);
+    border-radius: 0.125rem;
+
+    transition-timing-function: ease-in-out;
+    animation: bounce--bottom 1.125s infinite;
+}
+
+
+
+
 .log{
   list-style: none;
   display:flex;
@@ -81,12 +167,24 @@
   border-inline: 2px solid transparent;
 }
 
+.loadingBody p{
+  color: var(--shadow);
+}
+.loadingBody .message{
+  width: 100%;
+}
+
 .message::-moz-placeholder {
   color: rgb(170, 170, 170);
 }
 
 .message::placeholder {
   color: rgb(170, 170, 170);
+}
+
+.messageContainer{
+  margin: auto;
+  padding-bottom: .75rem;
 }
 
 .user{
@@ -145,5 +243,29 @@
 
   to {
     transform: translateY(-0.1em);
+  }
+}
+
+@keyframes bounce--top {
+  0% {
+    top: 0.5rem;
+  }
+  50% {
+    top: 0;
+  }
+  100% {
+    top: 0.5rem;
+  }
+}
+
+@keyframes bounce--bottom {
+  0% {
+    top: 0.5rem;
+  }
+  50% {
+    top: 1rem;
+  }
+  100% {
+    top: 0.5rem;
   }
 }
