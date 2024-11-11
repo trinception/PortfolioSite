@@ -85,6 +85,31 @@
   animation: move-bg 8s infinite linear;
 }
 
+/* Mobile */
+@media (max-width: 600px) {
+  .footer{
+    display:block;
+  }
+
+  .footerLinks{
+    display:block;
+  }
+
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 800px){
+  .footer{
+    display:block;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 800px) and (max-width: 1100px) {
+
+
+}
+
 @keyframes move-bg {
   to {
     background-position: var(--bg-size) 0;

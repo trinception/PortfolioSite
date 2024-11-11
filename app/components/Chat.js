@@ -184,7 +184,7 @@ const Chat = ({
     );
     setInputDisabled(true);
     setAsLoading(true);
-    console.log("loading...");
+
     submitActionResult(runId, toolCallOutputs);
   };
 
@@ -192,7 +192,7 @@ const Chat = ({
   const handleRunCompleted = () => {
     setInputDisabled(false);
     setAsLoading(false);
-    console.log("Done!");
+    scrollToBottom();
   };
 
   const handleReadableStream = (stream) => {

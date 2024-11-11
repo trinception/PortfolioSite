@@ -30,7 +30,7 @@
 .card h2 {
   padding-top: 1rem;
   font-family: var(--font-sans-serif);
-  font-weight: 550;
+  font-weight: 600;
   margin-bottom: 0.7rem;
   font-size: 20px;
 }
@@ -187,13 +187,33 @@
 @media (max-width: 600px) {
   .card{
     height:auto;
+    padding-right: 0rem;
+  }
+
+  .card h2{
+    padding-top: 1rem;
+  }
+
+  .projectImage{
+    height: 30%;
+  }
+  .project {
+    height:auto;
   }
 
 }
 
 /* Tablet */
 @media (min-width: 600px) and (max-width: 800px){
-
+  .card{
+    padding:0rem;
+  }
+  .projectImage{
+    height: 50%;
+  }
+  .project {
+    height:auto;
+  }
 }
 
 /* Tablet and Smaller Desktop */
@@ -204,5 +224,8 @@
   }
   .projectImage{
     height: 20%;
+  }
+  .project {
+    height:auto;
   }
 }
