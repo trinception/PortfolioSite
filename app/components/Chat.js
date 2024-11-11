@@ -216,16 +216,6 @@ const Chat = ({
 
   }
 
-
-  //On submit, the prompt is sent to the OpenAI chatbot, and the response is printed
-
-     /*catch(error) {
-
-      console.error("Error fetching response:", error);
-
-      setMessages([...newMessages, { role: 'assistant', content: "Sorry, I encountered an error. Please try again." }]);
-    }*/
-
   return (
     <div className={styles.chatBox}>
       <div className={styles.scroll}>

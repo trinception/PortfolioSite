@@ -88,7 +88,7 @@ export default function Home() {
                         languages: "HTML, CSS, JS, PHP",
                         technologies: "NextJS, NodeJS, React, MongoDB, AWS",
                         description: "Built my portfolio website from scratch. Includes interactive, dynamic elements, and a variety of unique features and easter eggs such as an AI chatbot.",
-                        link: "https://github.com/trinception/Websites",
+                        link: "https://github.com/trinception/PortfolioSite",
                         code:"true"
                       }} />
 
@@ -126,7 +126,7 @@ export default function Home() {
                     languages: "HTML, CSS, JS",
                     technologies: "OpenAI",
                     description: "Created an interactive AI chatbot that answers questions about me based on my CV and resume, using the OpenAI API Beta Assistant feature.",
-                    link: "https://github.com/trinception/Websites",
+                    link: "https://github.com/trinception/PortfolioSite/blob/main/app/components/Chat.js",
                     code:"true"
                   }} />
                 <ProjectCard project={{
