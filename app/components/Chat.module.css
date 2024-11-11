@@ -1,0 +1,149 @@
+.button {
+  right:0;
+  margin-right: 0;
+  background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+  color: white;
+  border-radius: 20px;
+  /*box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;*/
+  transition: all 0.2s ease-in-out;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover .svgWrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.button:hover svg {
+  transform: rotate(45deg) scale(1.1);
+}
+
+.button:hover span {
+  transform: translateX(5em);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.buttonWrapper{
+  display: flex;
+  justify-content: right;
+  padding-right: 1rem;
+  width:20%;
+  min-width: 60px;
+}
+
+.chatBox{
+  height:400px;
+  flex-direction: column;
+  border-radius: 30px;
+  display:grid;
+  grid-template-rows: repeat(2,auto);
+
+}
+
+.log{
+  list-style: none;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap:15px;
+  padding-bottom: 1rem;
+  max-height:inherit;
+}
+
+.message {
+  position:relative;
+  width: 80%;
+  background: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}
+
+.message::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.message::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.user{
+  display:flex;
+  align-items: center;
+  justify-content: right;
+  grid-template-columns: repeat(2,auto);
+
+}
+
+.scroll{
+  height:300px;
+  display: inline;
+  overflow-y: scroll;
+
+}
+
+.assistant{
+  display:grid;
+  align-items: center;
+  grid-template-columns: repeat(2,auto);
+
+
+}
+
+.typeArea{
+  position: relative;
+  width: 100%;
+  padding: 10px auto;
+  align-items: center;
+  align-self: end;
+  bottom:0;
+  margin: 20px 0px;
+  border-radius: 30px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  display:flex;
+  grid-template-columns: repeat(2, auto);
+}
+
+.userInput{
+  width:80%;
+  border: none;
+  justify-content: left;
+  left:0;
+  margin-left: 0;
+  border-radius:30px;
+  height:auto;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
