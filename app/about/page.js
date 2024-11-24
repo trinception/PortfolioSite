@@ -174,8 +174,8 @@ export default function Home() {
 
                 <div className={styles.chatBotContainer}>
                   <div className={styles.aboutChatBot}>
-                    <p className={styles.heading}>PortfolioBot</p>
-                    <p> Talk to me! This is an AI chatbot knowledgable about me. Find out if I have the skillset you're looking for, ask about the tech topics I'm interested in, learn more about my community involvement, and more! </p>
+                    <span className={styles.heading}>PortfolioBot</span>
+                    <p className={styles.words}> Talk to me! This is an AI chatbot knowledgable about me. Find out if I have the skillset you're looking for, ask about the tech topics I'm interested in, learn more about my community involvement, and more! </p>
                   </div>
                   <Chat/>
 

@@ -236,6 +236,12 @@
   padding: 1rem;
 }
 
+@media(max-width: 600px){
+  .userInput{
+    font-size: 14px;
+  }
+}
+
 @keyframes fly-1 {
   from {
     transform: translateY(0.1em);

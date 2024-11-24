@@ -371,6 +371,8 @@
 
 .botBlurb {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(2, minmax(50%, auto));
   max-width: 100%;
   padding-top: 6rem;
@@ -595,25 +597,31 @@
     display: block;
     padding-top: 6rem;
     width: var(--max-width);
+
   }
 
   .titlePicContainer{
     margin-left: 0px;
     margin-top: 0px;
+    justify-content: center;
+    align-items: center;
 
   }
 
   .chatBotContainer{
-  width: 90%;
-  padding: 25px 25px 0px 25px;
-  border: 5px solid rgb(255, 255, 255);
-  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
-  margin-left: -3.75rem;
-  margin-right: 3.75rem;
-  margin-bottom: 2.5rem;
-  margin-top: 0px;
+    width: 90%;
+    min-width: 100%;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+    margin-bottom: 2.5rem;
+    margin-top: 0px;
 
-  overflow: auto;}
+    overflow: auto;
+  }
+
+  .words{
+    font-size: 14px;
+  }
 
 }
 
@@ -649,7 +657,8 @@
   .titlePicContainer{
     margin-left: 0px;
     margin-top: 0px;
-
+    justify-content: center;
+    align-items: center;
   }
 
 }
