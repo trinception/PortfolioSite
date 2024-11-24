@@ -123,7 +123,7 @@ export default function Home() {
                       languages: "hsl",
                       technologies: "Vicon Shogun, Blender",
                       description: "Co-authored motion capture dataset of salsa dancers from various levels (beginner, intermediate, professional) improvising over a variety of different music styles and tempos.",
-                      link: "",
+                      link: "https://github.com/trinception/Blank-Link",
                       code:"false"
                     }} />
 

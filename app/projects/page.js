@@ -79,7 +79,7 @@ export default function Home() {
                               languages: "hsl",
                               technologies: "Vicon Shogun, Blender",
                               description: "Co-authored motion capture dataset of salsa dancers from various levels (beginner, intermediate, professional) improvising over a variety of different music styles and tempos.",
-                              link: "",
+                              link: "https://github.com/trinception/Blank-Link",
                               code:"false"
                             }} />
                 <ProjectCard project={{
@@ -107,7 +107,7 @@ export default function Home() {
                     languages: "Python",
                     technologies: "Amazon API, Goodreads API",
                     description: "Developed a collaborative filtering recommendation system which provides a list of books given a user's favourite reads. Currently expanding to include an interactive front-end.",
-                    link: "",
+                    link: "https://github.com/trinception/Blank-Link",
                     code: "false"
                   }} />
 
@@ -117,8 +117,8 @@ export default function Home() {
                     languages: "Python",
                     technologies: "OpenStreetMap Data",
                     description: "Developed a program that, given a collection of geotagged photos taken in the Greater Vancouver area, provides a map showing a route through the locations of these images and highlights the amenities of interest that they pass by.",
-                    link: "#",
-                    code: "true"
+                    link: "https://github.com/trinception/Blank-Link",
+                    code: "false"
                   }} />
                 <ProjectCard project={{
                     src:"./imgs/portfoliobot.png",
@@ -135,7 +135,7 @@ export default function Home() {
                     languages: "Python, PHP",
                     technologies: "BeautifulSoup, Selenium",
                     description: "Created a dynamic site web scraper to fetch real-time weather and COVID-19 data daily. Provided users with daily updates by delivering accurate information via automated emails or notifications.",
-                    link: "",
+                    link: "https://github.com/trinception/Blank-Link",
                     code:"false"
                   }} />
                 <ProjectCard project={{
