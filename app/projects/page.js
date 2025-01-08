@@ -58,7 +58,7 @@ export default function Home() {
 
               <div className={styles.desc}>
                 <p> <a className={styles.title}>&#128187; </a><a className={styles.nameIcon}>Research & Personal Projects</a> <br />
-                This is a glimpse of my work. Only my portfolio sites are on my <span className={styles.wordHighlightSubtle}>GitHub</span>.
+                This is a glimpse of my work. Not all of my projects are on my <span className={styles.wordHighlightSubtle}>GitHub</span>.
                 For any specific inquiries on projects, <span className={styles.wordHighlightSubtle}>Contact Me</span>.</p>
               </div>
 
