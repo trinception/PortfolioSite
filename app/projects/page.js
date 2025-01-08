@@ -98,7 +98,7 @@ export default function Home() {
                         languages: "HTML, CSS, JavaScript, SQL",
                         technologies: "Heroku, Socket.io, NodeJS, PostGreSQL",
                         description: "Built a full stack web-based racing game application allowing users to create profiles, add friends, engage in real-time chat, and compete against each other.",
-                        link: "https://github.com/trinception/Flag-Racers",
+                        link: "https://github.com/CodePerson2/Flag-Racers",
                         code: "true"
                       }} />
               <ProjectCard project={{
