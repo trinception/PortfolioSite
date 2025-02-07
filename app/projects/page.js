@@ -117,7 +117,7 @@ export default function Home() {
                     languages: "Python",
                     technologies: "OpenStreetMap Data",
                     description: "Developed a program that, given a collection of geotagged photos taken in the Greater Vancouver area, provides a map showing a route through the locations of these images and highlights the amenities of interest that they pass by.",
-                    link: "https://github.com/trinception/Blank-Link",
+                    link: "https://github.com/trinception/Trip-planning-project",
                     code: "false"
                   }} />
                 <ProjectCard project={{
@@ -135,7 +135,7 @@ export default function Home() {
                     languages: "Python, PHP",
                     technologies: "BeautifulSoup, Selenium",
                     description: "Created a dynamic site web scraper to fetch real-time weather and COVID-19 data daily. Provided users with daily updates by delivering accurate information via automated emails or notifications.",
-                    link: "https://github.com/trinception/Blank-Link",
+                    link: "https://github.com/trinception/CovidScraper",
                     code:"false"
                   }} />
                 <ProjectCard project={{
