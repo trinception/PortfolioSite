@@ -107,7 +107,7 @@ export default function Home() {
                 <Accordion items={[
                       {
                         title: <>&#127891; Academic Background</>,
-                        content: "I have a BSc in Mathematics & Computer Science from Simon Fraser University. Unable to choose between these two fields, I embraced both, allowing me to develop a unique perspective that combines rigorous mathematical thinking with practical programming skills. I hope to pursue grad school one day."
+                        content: "I have a BSc in Mathematics & Computer Science from Simon Fraser University. Unable to choose between these two fields, I embraced both, allowing me to develop a unique perspective that combines rigorous mathematical thinking with practical programming skills. In Sept 2025, I will begin grad school."
                       },
                       {
                         title: <>&#128187;  Skillset</>,
@@ -133,7 +133,7 @@ export default function Home() {
                         title: <>&#x1F469;&#x200D;&#x1F4BB; Professional Experience</>,
                         content: (
                           <>
-                            I am currently a Machine Learning Research Assistant at <a className={styles.wordHighlightClickMe} title="Click Me!" target="_blank" href="https://www.rosielab.ca" rel="noopener noreferrer">ROSIE Labs</a>, an AI robotics lab in Vancouver, BC. This role allows me to delve into cutting-edge technology, applying my skills to push the boundaries of what's possible in AI and robotics.
+                            I am currently a Data Analyst with the <a className={styles.wordHighlightClickMe} title="Click Me!" target="_blank" href="https://rcmp.ca/en" rel="noopener noreferrer">RCMP</a>. Prior to this, I was a Machine Learning Research Assistant at <a className={styles.wordHighlightClickMe} title="Click Me!" target="_blank" href="https://www.rosielab.ca" rel="noopener noreferrer">ROSIE Labs</a>, an AI robotics lab in Vancouver, BC. This role allowed me to delve into cutting-edge technology, applying my skills to push the boundaries of what's possible in AI and robotics.
                           </>
                       )
                       },

@@ -58,7 +58,7 @@ export default function Home() {
 
               <div className={styles.center}>
                  <p > <span className={styles.nameIcon}>Hi! My name is Trinity</span> <a className={styles.wave}>&#128075;</a> <br />
-                 I am a <span className={styles.wordHighlightPassion}>Machine Learning Research Assistant</span> in Vancouver, Canada
+                 I am a <span className={styles.wordHighlightPassion}>Data Analyst</span> in Vancouver, Canada
                  who is fascinated by all things data, AI, and programming. </p>
 
                  <div className={styles.buttons}>
@@ -194,7 +194,7 @@ export default function Home() {
                     My passion for <span className={styles.wordHighlightSubtle}>software engineering and development</span> began in my first year of university.
                     I love to create and explore different ways to solve new problems, in addition to enjoying the process of refining and perfecting pre-existing solutions.
                     I have a BSc. in <a className={styles.wordHighlightSubtle} target="_blank" href="https://www.sfu.ca/math.html" rel="noopener noreferrer">Mathematics</a> & <a className={styles.wordHighlightSubtle} target="_blank" href="https://www.sfu.ca/fas/computing.html" rel="noopener noreferrer">Computer Science</a> (couldn’t pick just one!) from Simon Fraser University.
-                    I am currently a Research Assistant at the AI robotics lab <a className={styles.wordHighlightClickMe} title="Click Me!" target="_blank" href="https://www.rosielab.ca" rel="noopener noreferrer">ROSIE Lab</a> in Vancouver, BC.
+                    I am currently a Data Analyst with the <a className={styles.wordHighlightClickMe} title="Click Me!" target="_blank" href="https://rcmp.ca/en" rel="noopener noreferrer">RCMP</a> in Vancouver, BC.
                     <br/>
                     <br/>
                     Want to know more? Send me an email or talk to my <a className={styles.wordHighlightClickMe} title="Click Me!" href="/about" rel="noopener noreferrer">PortfolioBot</a> on my 'about' page, an AI chatbot I created that knows my skillset, experience, and even my hobbies!
